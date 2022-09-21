@@ -14,4 +14,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 Once everything runs successfully, you should be able to view the doughnut chart.
 ![Doughtnut-chart](https://cdn.jsdelivr.net/gh/fxs7576/public_content/img/og_image_doughnut_20220827.jpg)
 
+[Click here](https://doughnut-economy-fxs7576-react.netlify.app) to see the live demo.
+
 
