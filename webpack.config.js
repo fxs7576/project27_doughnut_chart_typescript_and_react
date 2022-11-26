@@ -16,8 +16,20 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 use: ["ts-loader"],
-                exclude: /node_modules/
+                exclude: /node_modules/,
+            },
+            {
+                test: /\.css$/,
+                use: [
+                  "style-loader",
+                  "css-loader"
+                ]
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                use: ["file-loader?name=app/images/[name].[ext]"]
             }
+
         ]
     },
     resolve: {
@@ -28,7 +40,7 @@ module.exports = {
             test: /\.js(\?.*)?$/i,
             filename: "bundle.js",
             algorithm: "gzip",
-            deleteOriginalAssets: false,
+            deleteOriginalAssets: true,
         }),
     ]
 };
