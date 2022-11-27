@@ -2,6 +2,7 @@
 
 src/*
 public/*
+resource/*
 
 # dependencies
 /node_modules
